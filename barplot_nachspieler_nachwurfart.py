@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # --- Load and clean data ---
-df = pd.read_csv("Basketball_Daten.csv", sep=";", encoding="utf-8-sig")
+df = pd.read_csv("Basketball_Daten_3.csv", sep=";", encoding="utf-8-sig")
+
 df.columns = df.columns.str.strip().str.lower()
 df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
 

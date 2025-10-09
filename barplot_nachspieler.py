@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Dataframe erstellen
-df = pd.read_csv("Basketball_Daten.csv", sep=";", encoding="utf-8-sig")
+df = pd.read_csv("Basketball_Daten_3.csv", sep=";", encoding="utf-8-sig")
 
 # Clean column names
 df.columns = df.columns.str.strip().str.lower()
