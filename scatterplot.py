@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Daten laden
-df = pd.read_csv("Basketball_Daten.csv", sep=";", skipinitialspace=True)
+df = pd.read_csv("Basketball_Daten_3.csv", sep=";", skipinitialspace=True)
 
 # Punkte nach Passanzahl summieren
 summary = df.groupby("passes")["points"].sum().reset_index()
