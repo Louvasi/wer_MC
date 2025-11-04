@@ -66,7 +66,7 @@ def get_player_stats(player: str) -> str:
         p_b  = _rate_for_type_and_block(player_df, key, 1)  # mit Block
         lines.append(
             f"Erfolg-Rate {label} {sym} = {p_overall:.2f} "
-            f"(ohne Block = {p_nb:.2f}, mit Block = {p_b:.2f})"
+            f"(ohne Block = {p_nb:.2f}, unten Block = {p_b:.2f})"
         )
 
     return "\n".join(lines)
