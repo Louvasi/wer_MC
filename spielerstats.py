@@ -1,7 +1,7 @@
 import pandas as pd
 
 # --- Load & clean data ---
-CSV_PATH = r"C:\Users\lukas\Desktop\gpr\wer_MC\Basketball_Daten.csv"
+CSV_PATH = "Basketball_Daten.csv"
 
 df = pd.read_csv(CSV_PATH, sep=";", encoding="utf-8-sig")
 
